@@ -3,3 +3,10 @@ Message: { "text":"5555555","color":"white","size":"1","position":"0"
 Message: { "text":"55555555555","color":"white","size":"1","position":"0"
 Message: { "text":"77777777777","color":"white","size":"1","position":"0"
 Message: { "text":"7788888888","color":"white","size":"1","position":"0"
+client-1 is closed
+3-----time:2016-12-08 19:19:45--IP--1.194.187.34-----client-2 is closed
+4-----time:2016-12-08 19:19:46--IP--1.194.187.34-----client-3 is closed
+5-----time:2016-12-08 19:20:18--IP--1.194.144.222-----Message: { "text":"22222222222","color":"white","size":"1","position":"0"
+Message: { "text":"333333333333","color":"white","size":"1","position":"0"
+Message: { "text":"44444444","color":"white","size":"1","position":"0"
+Message: { "text":"5555555555","color":"white","size":"1","position":"0"
