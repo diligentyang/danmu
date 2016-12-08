@@ -12,7 +12,7 @@ git clone https://github.com/chiruom/jquery.danmu.js.git
 
 大致一看目录结构如下：
 
-![图示](http://img.blog.csdn.net/20161208130717798?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjg2MDI5NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![图示](http://img.blog.csdn.net/20161208130717798)
 
 进入demo目录，先运行一下例子看看结果呗。
 
