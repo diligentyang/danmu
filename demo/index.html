@@ -51,8 +51,8 @@ Demo<br><br>
   弹幕透明度:
   <input type="range" name="op" id="op" onchange="op()" value="100"> <br>
   当前弹幕运行时间(秒)：<span id="time"></span>&nbsp;&nbsp;
-  设置当前弹幕时间(秒)： <input type="text" id="set_time" max=20 />
-  <button type="button"  onclick="settime()">设置</button>
+  <!--设置当前弹幕时间(秒)： <input type="text" id="set_time" max=20 />
+  <button type="button"  onclick="settime()">设置</button>-->
   <br>
   发弹幕:
   <select  name="color" id="color" >
@@ -82,6 +82,8 @@ Demo<br><br>
 	websocket.onopen = function (evt) {
 		console.log("Connected to WebSocket server.");
 		/*websocket.send("gaga");*/
+		//连上之后就打开弹幕
+		$('#danmu').danmu('danmuResume');
 	};
 	
 	websocket.onclose = function (evt) {
@@ -90,7 +92,9 @@ Demo<br><br>
 		
 	websocket.onmessage = function (evt) {
 		console.log('Retrieved data from server: ' + evt.data);
-		var text_obj= evt.data +'"time":'+time+'}';//获取加上当前时间
+		var time = $('#danmu').data("nowTime")+1;
+		var text_obj= evt.data +',"time":'+time+'}';//获取加上当前时间
+		console.log(text_obj);
 		var new_obj=eval('('+text_obj+')');
 		$('#danmu').danmu("addDanmu",new_obj);//添加弹幕
 	};
@@ -123,7 +127,6 @@ Demo<br><br>
   timedCount();
 
 
-
   function starter(){
     $('#danmu').danmu('danmuStart');
   }
@@ -148,12 +151,12 @@ Demo<br><br>
     var text = document.getElementById('text').value;
     var color = document.getElementById('color').value;
     var position = document.getElementById('position').value;
-    var time = $('#danmu').data("nowTime")+1;
+    //var time = $('#danmu').data("nowTime")+1;
     var size =document.getElementById('text_size').value;
     //var text_obj='{ "text":"'+text+'","color":"'+color+'","size":"'+size+'","position":"'+position+'","time":'+time+'}';
 	//为了处理简单，方便后续加time，和isnew，就先酱紫发一半吧。
 	//注：time为弹幕出来的时间，isnew为是否加边框，自己发的弹幕，常理上来说是有边框的。
-    var text_obj='{ "text":"'+text+'","color":"'+color+'","size":"'+size+'","position":"'+position;
+    var text_obj='{ "text":"'+text+'","color":"'+color+'","size":"'+size+'","position":"'+position+'"';
 	//利用websocket发送
 	websocket.send(text_obj);
 	//清空相应的内容

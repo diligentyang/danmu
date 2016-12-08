@@ -18,12 +18,10 @@ $ws->on('message', function ($ws, $frame) {
 	foreach($ws->connections as $fd){
 		//如果是某个客户端，自己发的则加上isnew属性，否则不加
 		if($frame->fd == $fd){
-			$ws->push($frame->fd, "{$frame->data}");
+			$ws->push($frame->fd, $frame->data.',"isnew":""');
 		}else{
-			$ws->push($frame->fd, "{$frame->data}");
+			$ws->push($fd, "{$frame->data}");
 		}
-		
-        $ws->push($fd , $frame->data);
     }
 });
 
