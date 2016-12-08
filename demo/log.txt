@@ -1,1 +1,5 @@
 ﻿1-----time:2016-12-08 19:12:57--IP--1.194.144.222-----2-----time:2016-12-08 19:12:59--IP--1.194.144.222-----Message: { "text":"444444444","color":"white","size":"1","position":"0"
+Message: { "text":"5555555","color":"white","size":"1","position":"0"
+Message: { "text":"55555555555","color":"white","size":"1","position":"0"
+Message: { "text":"77777777777","color":"white","size":"1","position":"0"
+Message: { "text":"7788888888","color":"white","size":"1","position":"0"
