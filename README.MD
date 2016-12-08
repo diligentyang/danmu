@@ -34,7 +34,7 @@ git clone https://github.com/chiruom/jquery.danmu.js.git
 
 再一刷新，不出预料，成功运行。
 
-![这里写图片描述](http://img.blog.csdn.net/20161208132710326?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjg2MDI5NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+![图示](http://img.blog.csdn.net/20161208132710326)
 
 很有意思，有木有，很激动有木有。然而重点才刚刚开始。
 
