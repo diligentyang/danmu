@@ -311,6 +311,6 @@ $ws->start();
 
 github地址：https://github.com/diligentyang/danmu
 
-原文博主：http://blog.csdn.net/qq_28602957
+原文连接：https://blog.csdn.net/qq_28602957/article/details/53523240
 
 如需转载请明示。
